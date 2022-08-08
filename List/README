@@ -1,0 +1,32 @@
+================================================================================
+Algorytmy i Struktury Danych          List           Autor: Vladyslav Slovinskyi
+================================================================================
+
+* Zawartosc:
+============
+
+Katalog List zawiera implementacje ADT LIST w trzech wersjach:
+ * tablicowej;
+ * kursorowej;
+ * wskaźnikowej;
+ 
+Interfejs jest nastepujacy:
+
+class List
+{
+    void push_front(int x);    // Dolacza element na poczatek listy
+    int pop_front();           // Usuwa i zwraca element z poczatku listy
+    void push_back(int x);     // Dolacza element na koniec listy
+    int pop_back();            // Usuwa i zwraca element z konca listy
+    int size();                // Zwraca liczbe elementow w liscie
+    bool empty();              // Zwraca true gdy lista jest pusta
+    void clear();              // Czyści liste
+    int find(int x);           // Zwraca pozycje pierwszego elementu
+                               // o wartosci x
+    int erase(int i);          // Usuwa i zwraca element na pozycji i
+    void insert(int i, int x); // Wstawia element x przed pozycje i
+    int remove(int x);         // Usuwa wystapienia x i zwraca ich liczbe
+};
+
+--------------------------------------------------------------------------------
+================================================================================
