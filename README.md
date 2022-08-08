@@ -1,2 +1,2 @@
-# Data-Structures
-Implementations of data structures
+# Algorithms and Data Structures
+Implementations of algorithms data structures
