@@ -1,0 +1,64 @@
+================================================================================
+Algorytmy i Struktury Danych           BST           Autor: Vladyslav Slovinskyi
+================================================================================
+
+* Zawartosc:
+============
+
+Katalog BST zawiera wskaznikowa implementacje binarnego drzewa poszukiwan
+(BST).
+ 
+Interfejs jest nastepujacy:
+
+class BinarySearchTree
+{
+    int size();                    // zwraca liczbe wezlow
+    void insert(int x);            // wstawia element x do drzewa 
+    int minimum();                 // zwraca wartosc najmniejszego elementu 
+    int maximum();                 // zwraca wartosc najwiekszego elementu
+    int depth();                   // zwraca wysokosc drzewa
+    
+                                   // sprawdza czy element nalezy do drzewa, 
+                                   // zwraca wskaznik do wezla lub nullptr.
+    int* search(int x);            // wersja iteracyjna
+    int* searchRecursive(int x);   // wersja rekurencyjna
+    
+    void inorder();                // wypisuje zawartosc wszystkich wezlow 
+                                   // w porzadku inorder
+    
+    void preorder();               // wypisuje zawartosc wszystkich wezlow
+                                   // w porzadku preorder
+    
+    void postorder();              // wypisuje zawartosc wszystkich wezlow
+                                   // w porzadku postorder
+};
+
+--------------------------------------------------------------------------------
+
+I. BST:
+       1) BinaryTree.h,            - wskaznikowa implementacja drzewa BST;
+          BinaryTree.cpp
+       2) main.cpp                 - program, ktory wczytuje ze
+                                     standardowego wejscia dane oraz wypisuje 
+                                     na wyjscie standardowe w pierwszej linijce
+                                     liczbe elementow, wysokosc drzewa, minimum
+                                     oraz maximum. W kolejnych n liniach 
+                                     elementy w porzadku preorder. W ostatnich
+                                     9-ciu liniach dla liczb od 1 do 9 
+                                     program wypisuje 'Yes', gdy nalezy ona 
+                                     do drzewa lub 'No' w przeciwnym przypadku;
+--------------------------------------------------------------------------------
+
+* Jak uruchomic programy:
+=========================
+
+Katalog zawiera program Makefile do kompilacji powyzszych programow,
+a takze czyszczenia katalogu.
+
+-> Aby skompilowac projekt nalezy wykonac:
+       $ make
+       
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       $ make clean
+        
+================================================================================
