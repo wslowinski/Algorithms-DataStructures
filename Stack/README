@@ -10,7 +10,7 @@ Katalog Stack zawiera implementacje ADT Stack w dwoch wersjach:
  * wskaznikowej;
 --------------------------------------------------------------------------------
 
-I. Zestaw01:
+I. Stack:
        1) ArrayStack.*             - tablicowa implementacja stosu;
        2) LinkedStack.*            - wskaznikowa implementacja stosu;
        3) Stack.cpp                - program, ktory wczytuje ze

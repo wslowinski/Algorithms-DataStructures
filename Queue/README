@@ -10,7 +10,7 @@ Katalog Queue zawiera implementacje ADT Queue w dwoch wersjach:
  * wskaznikowej;
 --------------------------------------------------------------------------------
 
-I. Zestaw01:
+I. Queue:
        1) ArrayQueue.*             - tablicowa implementacja kolejki;
        2) LinkedQueue.*            - wskaznikowa implementacja kolejki;
        3) Queue.cpp                - program, ktory wczytuje ze
