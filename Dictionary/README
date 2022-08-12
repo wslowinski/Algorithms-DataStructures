@@ -1,0 +1,60 @@
+================================================================================
+Algorytmy i Struktury Danych       Dictionary        Autor: Vladyslav Slovinskyi
+================================================================================
+
+* Zawartosc:
+============
+
+Katalog Dictionary zawiera implementacje slownika przy uzyciu tablicy
+z hashowaniem lancuchowym.
+ 
+Interfejs jest nastepujacy:
+
+template<class K, class V>
+class Dict
+{
+    using Pair = std::pair<K, V>;
+    
+    int size();                    // zwraca liczbe par
+    bool insert(Pair p);           // dodaje pare klucz-wartosc do slownika 
+    bool find(K k);                // sprawdza czy slownik zawiera klucz 
+    V operator[](K k);             // zwraca wartosc dla klucza
+    bool erase(K k);               // usuwa pare o danym kluczu
+    void buckets();                // wypisuje informacje o slowniku
+};
+
+--------------------------------------------------------------------------------
+
+I. Dictionary:
+       1) Dict.h,            - implementacja slownika;
+          Dict.cpp
+       2) main.cpp,          - program, ktory wczytuje pary slow do slownika,
+                               nastepnie wczytuje slowa ze standardowego
+                               wejscia. Jesli para o danym kluczu istnieje,
+                               wtedy program wypisuje odpowiednia wartosc, 
+                               w przeciwnym wypadku wypisuje -; 
+                                     
+--------------------------------------------------------------------------------
+
+* Jak uruchomic programy:
+=========================
+
+Katalog zawiera program Makefile do kompilacji powyzszych programow,
+a takze czyszczenia katalogu.
+
+-> Aby skompilowac projekt nalezy wykonac:
+       $ make
+       
+Program main wczytuje do slownika Dict<std::string, std::string> pary slow 
+z pliku o nazwie podanej jako argument linii komend (argv[1]). Nastepnie 
+wczytuje slowa (klucze) ze standardowego wejscia. Jeżeli para o danym kluczu 
+istnieje w slowniku program wypisze odpowiadajaca mu wartosc, a w przeciwnym 
+wypadku wypisze -.
+
+       $ ./main pairs.txt < input.txt > output.txt
+       $ diff -s results.txt output.txt
+       
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       $ make clean
+        
+================================================================================
