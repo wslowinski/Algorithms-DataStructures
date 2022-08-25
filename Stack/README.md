@@ -4,9 +4,9 @@ This directory contains two versions of stack implementation:
 * using Linked List;
 
 ## Content
-* ```ArrayStack.*``` - Stack Implementation using an Array;
-* ```LinkedStack.*``` - Stack Implementation using a Linked List;
-* ```RPN.cpp``` - a program that uses a stack to convert arithmetic expressions in infix notation to Reverse Polish notation (RPN);
+* ```ArrayStack.h```,  ```ArrayStack.cpp``` - Stack Implementation using an Array;
+* ```LinkedStack.h*```, ```LinkedStack.cpp``` - Stack Implementation using a Linked List;
+* ```RPN.cpp``` - program to convert arithmetic expressions in infix notation to Reverse Polish Notation (RPN);
 
 ## Technologies
 Project is created with ```C++14```.
