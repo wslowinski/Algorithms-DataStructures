@@ -10,11 +10,11 @@ This directory contains two versions of stack implementation:
 ## Interface
 ```cpp
 class Stack {
-    Stack(int capacity); // Constructs the stack
-    void push(int x); // Inserts element at the top
-    int pop(); // Removes the top element and returns value
-    int size(); // Returns the number of elements
-    bool empty(); // Checks whether the underlying container is empty
+    Stack(int capacity);  // Constructs the stack
+    void push(int x);     // Inserts element at the top
+    int pop();            // Removes the top element and returns value
+    int size();           // Returns the number of elements
+    bool empty();         // Checks whether the underlying container is empty
 };
 ```
 

@@ -8,7 +8,7 @@ This directory contains dictionary impelementation using linked list.
 ## Interface
 ```cpp
 class Dict {
-using Pair = std::pair<std::string, std::string>;
+    using Pair = std::pair<std::string, std::string>;
     
     Dict(const int& capacity);                       // Constructs the dictionary
     void clear();                                    // Clears the contents 

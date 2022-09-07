@@ -9,11 +9,11 @@ versions of queue implementation:
 ## Interface
 ```cpp
 class Queue {
-    Queue(); // Constructs the queue
-    void enqueue(int x); // Inserts element at the end
-    int dequeue(); // Removes the first element and returns the value
-    int size(); // Returns the number of elements
-    bool empty(); // Checks whether the underlying container is empty
+    Queue();              // Constructs the queue
+    void enqueue(int x);  // Inserts element at the end
+    int dequeue();        // Removes the first element and returns the value
+    int size();           // Returns the number of elements
+    bool empty();         // Checks whether the underlying container is empty
 };
 ```
 
