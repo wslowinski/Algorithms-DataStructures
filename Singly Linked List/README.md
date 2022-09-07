@@ -1,5 +1,7 @@
 # Singly Linked List
-This directory contains two versions of Singly Linked List implementation:
+Singly linked lists contain nodes which have a value field as well as next 
+field, which points to the next node in line of nodes. This directory contains 
+two versions of Singly Linked List implementation:
 * using Array;
 * using Cursors;
 

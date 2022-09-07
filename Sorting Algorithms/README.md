@@ -1,4 +1,5 @@
 # Sorting Algorithms
+Sorting algorithm is an algorithm that puts elements of a list into an order.
 This directory contains implementations of the following sorting algorithms:
 * Bubble Sort;
 * Selection Sort;

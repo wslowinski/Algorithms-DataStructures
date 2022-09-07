@@ -1,5 +1,8 @@
 # Binary Search Tree
-This directory contains Binary Search Tree implementation (BST).
+Binary Search Tree (BST) is a rooted binary tree data structure with the key 
+of each internal node being greater than all the keys in the respective node's 
+left subtree and less than the ones in its right subtree. This directory 
+contains Binary Search Tree implementation.
 
 ## Interface
 ```cpp

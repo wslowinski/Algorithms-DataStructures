@@ -1,5 +1,7 @@
 # Doubly Linked List
-This directory contains Doubly Linked List implementation.
+In a doubly linked list, each node contains, besides the next-node link, 
+a second link field pointing to the previous node in the sequence. This 
+directory contains Doubly Linked List implementation.
 
 ## Interface
 ```cpp
