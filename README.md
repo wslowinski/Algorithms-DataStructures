@@ -9,7 +9,7 @@ A data structure is a particular way of organizing and storing data in a compute
 * [Queue](Queue/)
 * [Stack](Stack/)
 * [Hash Table](Dictionary/) (separate chaining)
-* [Priority Queue](BinaryHeap/)
+* [Priority Queue](Binary%20Heap/)
 * [Binary Search Tree](Binary%20Search%20Tree/) (BST)
 * [Graph](Graph/) (both directed and undirected)
 * [Set](Set/)

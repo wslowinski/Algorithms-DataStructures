@@ -4,7 +4,7 @@
 #include "Container.h"
 
 template <typename T>
-class PriorityQueue  : public Container 
+class PriorityQueue : public Container 
 {
 public:
     virtual void enqueue(T element) = 0;

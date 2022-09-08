@@ -55,7 +55,10 @@ void BinaryHeap<T>::swap(T* x, T* y) {
 }
 
 template <typename T>
-BinaryHeap<T>::BinaryHeap(unsigned int n) : heap_size(0), data(n) {
+BinaryHeap<T>::BinaryHeap(unsigned int n): 
+    heap_size(0), 
+    data(n) 
+{
     capacity = n;
 }
 

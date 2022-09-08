@@ -4,7 +4,8 @@
 class Container 
 {
 protected:
-    Container(){};
+    Container(){
+    };
 
 public:
     virtual unsigned int count() const = 0;
