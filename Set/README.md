@@ -1,5 +1,5 @@
 # Set
-set is an abstract data type that can store unique values, without any particular 
+Set is an abstract data type that can store unique values, without any particular 
 order. It is a computer implementation of the mathematical concept of a finite 
 set. This directory contains set impelementation using array.
 
@@ -14,11 +14,11 @@ class SetAsArray : public Set<int> {
         bool is_done() const;
     };
 
-    SetAsArray(unsigned int n);             // Construct set
-    void make_null();                       // Clear content
-    void insert(int element);               // Insert element 
-    bool is_member(int element) const;      // Test whether container contain element
-    void withdraw(int element);             // Erase elements
+    SetAsArray(unsigned int n);             // Constructs the set
+    void make_null();                       // Clears content
+    void insert(int element);               // Inserts element 
+    bool is_member(int element) const;      // Tests whether container contain element
+    void withdraw(int element);             // Erases elements
     
     // Operator overloading
     friend SetAsArray operator+(SetAsArray const& A, SetAsArray const& B);
