@@ -14,8 +14,8 @@ LIB3_MAIN = $(ODD_VISITOR).hpp
 
 IMP_SET = $(SET).cpp
 
-CXXFLAGS = -std=c++14
-LFLAGS = -std=c++14
+CXXFLAGS = -std=c++17
+LFLAGS = -std=c++17
 
 CXX = g++
 LD = $(CXX)
