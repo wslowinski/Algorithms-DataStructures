@@ -229,12 +229,12 @@ void GraphAsMatrix::DFS_spanning_tree(Vertex* v, std::vector<bool>& visited, std
         if (!visited[vertex->get_number()]) {
             parent[vertex->get_number()] = v->get_number();
             std::cout << vertex->get_number() << "\'s parent is " << parent[vertex->get_number()] << std::endl;
-            DFS1(vertex, visited, parent);
+            dfs(vertex, visited, parent);
         }
     }
 }
 
-void GraphAsMatrix::DFS1(Vertex* v, std::vector<bool>& visited, std::vector<int>& parent) {
+void GraphAsMatrix::dfs(Vertex* v, std::vector<bool>& visited, std::vector<int>& parent) {
     visited[v->get_number()] = true;
     for (GraphAsMatrix::EmanEdgesIter& it = this->eman_edges_iter(v->get_number()); 
         !it.is_done(); ++it) {
@@ -242,7 +242,7 @@ void GraphAsMatrix::DFS1(Vertex* v, std::vector<bool>& visited, std::vector<int>
         if (!visited[vertex->get_number()]) {
             parent[vertex->get_number()] = v->get_number();
             std::cout << vertex->get_number() << "\'s parent is " << parent[vertex->get_number()] << std::endl;
-            DFS1(vertex, visited, parent);
+            dfs(vertex, visited, parent);
         }
     }
 }

@@ -24,7 +24,7 @@ An algorithm is an unambiguous specification of how to solve a class of problems
   * [Radix Sort](Queue/)
 * **Graphs**
   * [Depth-First Search](DFS/) (DFS)
-  * [Spanning Tree](SpanningTree) - finding Spanning Tree for graph
+  * [Spanning Tree](Spanning%20Tree) - finding Spanning Tree for graph
   
 ## Technologies
 Project is created with:

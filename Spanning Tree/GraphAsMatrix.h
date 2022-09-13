@@ -92,7 +92,7 @@ public:
     bool is_connected();
     void DFS_spanning_tree(Vertex* v, std::vector<bool>& visited, std::vector<int>& parent);
     void DFS_spanning_tree(Vertex* v);
-    void DFS1(Vertex* v, std::vector<bool>& visited, std::vector<int>& parent);
+    void dfs(Vertex* v, std::vector<bool>& visited, std::vector<int>& parent);
 
     AllVerticesIter& vertices_iter() {
         return *(new AllVerticesIter(*this));

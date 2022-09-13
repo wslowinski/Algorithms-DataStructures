@@ -127,9 +127,9 @@ void test_Connectivity() {
     graph->add_edge(6, 8);
     graph->add_edge(8, 6);
     // graph->add_edge(0, 8);
-    std::cout << "graf jest spojny = " << graph->is_connected() << std::endl;
+    std::cout << "connectivity: " << graph->is_connected() << std::endl;
     graph->add_edge(0, 8);
-    std::cout << "graf jest spojny = " << graph->is_connected() << std::endl;
+    std::cout << "connectivity: " << graph->is_connected() << std::endl;
     delete graph;
     std::cout << "\n******************************" << std::endl;
 }
@@ -149,9 +149,9 @@ void test_Strong_Connectivity() {
     dGraph->add_edge(0, 8);
     dGraph->add_edge(6, 0);
     dGraph->add_edge(9, 0);
-    std::cout << "graf jest silnie spojny = " << dGraph->is_connected() << std::endl;
+    std::cout << "strong connectivity: " << dGraph->is_connected() << std::endl;
     dGraph->add_edge(7, 0);
-    std::cout << "graf jest silnie spojny = " << dGraph->is_connected() << std::endl;
+    std::cout << "strong connectivity: " << dGraph->is_connected() << std::endl;
     delete dGraph;
 }
 
