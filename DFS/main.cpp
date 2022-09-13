@@ -126,7 +126,6 @@ int main() {
     graph->add_edge(3, 4);
     graph->add_edge(3, 7);
     graph->add_edge(4, 5);
-    // graph->add_edge(5, 9);
     graph->add_edge(9, 9);
     graph->add_edge(6, 8);
     graph->add_edge(8, 6);
